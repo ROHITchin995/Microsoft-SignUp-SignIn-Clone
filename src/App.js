@@ -1,10 +1,17 @@
 import { useState } from 'react';
 import './App.css';
-import Signin from './Components/SignIn';
-import SignUp from './Components/SignUp';
 import logo from './logo2.jpg'
+
+
 function App() {
   const [showSignIn, setshowSignIn] = useState(false)
+
+  const changeForm = ()=>{
+    setshowSignIn(!showSignIn)
+  }
+
+
+
 
   return (
     <div>
@@ -22,7 +29,7 @@ function App() {
         {/* input for password  */}
         <label htmlFor="password">Password</label>
         <input type="password" name="password" id="password" placeholder='Password'/>
-        <span> New User ?  <span className='formChanger'>Create account</span>  
+        <span> New User ?  <span className='formChanger' onClick={changeForm}>Create account</span>  
             </span>
         <button>Continue</button>
        </form>
@@ -48,7 +55,7 @@ function App() {
         {/* input for confirm Password  */}
         <label htmlFor="confirmPassword">Confirm Password</label>
         <input type="password" name="confirmPassword" id="confirmPassword" placeholder='Confirm Password'/>
-        <span> Account already exist ? <span className='formChanger'> Continue </span>
+        <span> Account already exist ? <span className='formChanger' onClick={changeForm}> Continue </span>
         </span>
         <button>Create</button>
        </form>
