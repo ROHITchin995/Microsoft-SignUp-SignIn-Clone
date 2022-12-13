@@ -60,7 +60,7 @@ function App() {
   return (
     <div>
       {showSignIn?(
-      //  sign In component
+     //  sign In component 
       <div className='main-container'>
         <div className="inside-container">
         <img alt="logo" className='logo' src={logo} />
@@ -77,9 +77,10 @@ function App() {
             </span>
         <button onClick={validateSignIn}>Continue</button>
        </form>
-       </div>
        
+       </div>
     </div> 
+    
       ):(
         // sign Up component
         <div className='main-container'>
@@ -105,11 +106,10 @@ function App() {
         <button onClick={validateSignUp} >Create</button>
        </form>
        </div>
-      
+       
     </div>
-
       )}
-      {message? (message):''}
+      <div className='message-container'>{message? (message):''}</div>
     </div>
   );
 }
