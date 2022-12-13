@@ -17,7 +17,8 @@ function Signin() {
         {/* input for password  */}
         <label htmlFor="password">Password</label>
         <input type="password" name="password" id="password" placeholder='Password'/>
-        New User ? Create account
+        <span> New User ?  <span className='formChanger'>Create account</span>  
+            </span>
         <button>Continue</button>
        </form>
        </div>

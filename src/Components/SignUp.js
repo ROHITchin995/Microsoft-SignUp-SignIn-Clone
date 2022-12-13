@@ -22,7 +22,8 @@ function SignUp() {
         {/* input for confirm Password  */}
         <label htmlFor="confirmPassword">Confirm Password</label>
         <input type="password" name="confirmPassword" id="confirmPassword" placeholder='Confirm Password'/>
-        Account already exist ? Continue
+        <span> Account already exist ? <span className='formChanger'> Continue </span>
+        </span>
         <button>Create</button>
        </form>
        </div>

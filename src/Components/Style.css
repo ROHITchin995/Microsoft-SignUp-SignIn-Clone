@@ -4,8 +4,8 @@
 }
 .main-container{
     position: absolute;
-    top: 20%;
-    left: 40%;
+    top: 15%;
+    left: 35%;
 }
 .inside-container button{
     margin-top: 10px;
@@ -35,4 +35,11 @@
 }
 .signInFont{
     margin-top: 2px;
+}
+.formChanger{
+    color: blue;
+    text-decoration: underline;
+}
+.formChanger:hover{
+    cursor: pointer;
 }
