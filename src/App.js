@@ -7,6 +7,7 @@ function App() {
   const [showSignIn, setshowSignIn] = useState(false)
 
   const changeForm = ()=>{
+    document.getElementsByTagName("form")[0].reset()
     setshowSignIn(!showSignIn)
   }
 
@@ -25,10 +26,10 @@ function App() {
        <form action="" >
         {/* input for email */}
         <label htmlFor="email">Email</label>
-        <input type="text" name="email" id="email" placeholder='Email'/>
+        <input type="text" name="signInEmail" id="signInEmail" placeholder='Email'/>
         {/* input for password  */}
         <label htmlFor="password">Password</label>
-        <input type="password" name="password" id="password" placeholder='Password'/>
+        <input type="password" name="signInPassword" id="signInPassword" placeholder='Password'/>
         <span> New User ?  <span className='formChanger' onClick={changeForm}>Create account</span>  
             </span>
         <button>Continue</button>
@@ -42,15 +43,15 @@ function App() {
         <img alt="logo" className='logo' src={logo} />
         
        <div className="signInFont"> Create Account</div> 
-       <form action="" >
+       <form action="">
         {/* input for Name */}
         <label htmlFor="name">Name</label>
         <input type="text" name="name" id="name" placeholder='Name'/>
         {/* input for email */}
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email2">Email</label>
         <input type="text" name="email" id="email" placeholder='Email'/>
         {/* input for password  */}
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password2">Password</label>
         <input type="password" name="password" id="password" placeholder='Password'/>
         {/* input for confirm Password  */}
         <label htmlFor="confirmPassword">Confirm Password</label>
